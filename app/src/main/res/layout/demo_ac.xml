@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:orientation="vertical"
+    android:weightSum="3"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/face"
+                style="@style/CardView.Dark"
+                android:layout_width="10dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape"
+                android:text="Face Follower"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"></Button>
+
+            <Button
+                android:id="@+id/voice"
+                style="@style/CardView.Dark"
+                android:layout_width="10dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape"
+                android:text="Voice Assistant"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/color"
+                style="@style/CardView.Dark"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape"
+                android:text="Filter"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"></Button>
+
+            <Button
+                android:id="@+id/ocr"
+                style="@style/CardView.Dark"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape"
+                android:text="OCR"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"></Button>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/trflogo6"></ImageView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/move"
+                style="@style/CardView.Dark"
+
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape"
+                android:text="MOVE"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"></Button>
+
+            <Button
+                android:id="@+id/manual"
+                style="@style/CardView.Dark"
+
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape"
+                android:text="Manual "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"></Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0" />
+
+            <Button
+                android:id="@+id/bluetooth"
+                style="@style/CardView.Dark"
+
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="3"
+                android:background="@drawable/shape"
+                android:text="Bluetooth"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"></Button>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.LinearLayoutCompat>

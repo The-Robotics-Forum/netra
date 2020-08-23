@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Integrated_Level_1</string>
+    <string name="title_activity_ocr_act">OCR_act</string>
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="demo">demo</string>
+</resources>

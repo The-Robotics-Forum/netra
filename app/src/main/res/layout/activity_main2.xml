@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/cameraView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:id="@+id/h_min"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/h_max"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="52dp" />
+
+    <SeekBar
+        android:id="@+id/h_max"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/s_min"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="37dp" />
+
+    <SeekBar
+        android:id="@+id/s_min"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="165dp" />
+
+    <SeekBar
+        android:id="@+id/s_max"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="105dp" />
+
+    <SeekBar
+        android:id="@+id/v_min"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="59dp" />
+
+    <SeekBar
+        android:id="@+id/v_max"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/Red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/s_min"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="22dp"
+        android:text="RED" />
+
+    <Button
+        android:id="@+id/Blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Red"
+        android:layout_alignTop="@+id/h_max"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="57dp"
+        android:text="BLUE" />
+
+    <Button
+        android:id="@+id/Green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Red"
+        android:layout_alignBottom="@+id/s_max"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-34dp"
+        android:text="GREEN" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Red"
+        android:layout_alignBottom="@+id/v_max"
+        android:text="RESET" />
+
+    <Button
+        android:id="@+id/reset_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Red"
+        android:layout_alignBottom="@+id/h_min"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="-1dp"
+        android:text="RESET_POS" />
+
+    <Button
+        android:id="@+id/hide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="20dp"
+        android:text="HIDE" />
+
+    <Button
+        android:id="@+id/values"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/hide"
+        android:layout_alignTop="@+id/h_min"
+        android:text="Button" />
+
+
+</RelativeLayout>

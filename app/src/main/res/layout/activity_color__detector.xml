@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Color_Detector">
+
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/cameraView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:id="@+id/h_min"
+        android:layout_width="250dp"
+        android:layout_height="20px"
+        android:layout_alignBottom="@+id/h_max"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="52dp"
+        android:progressDrawable="@drawable/progress" />
+
+    <SeekBar
+        android:id="@+id/h_max"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/s_min"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="37dp"
+        android:visibility="invisible" />
+
+    <SeekBar
+        android:id="@+id/s_min"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="165dp"
+        android:visibility="invisible" />
+
+    <SeekBar
+        android:id="@+id/s_max"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="105dp"
+        android:visibility="invisible" />
+
+    <SeekBar
+        android:id="@+id/v_min"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="59dp"
+        android:visibility="invisible" />
+
+    <SeekBar
+        android:id="@+id/v_max"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="12dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="157dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="24dp"
+        android:text="DONE"
+        android:visibility="invisible" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/red"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/settings"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-150dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/red"
+        android:visibility="invisible"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="2dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/blue"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/red"
+        android:layout_alignStart="@+id/settings"
+        android:layout_marginStart="-124dp"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/blue"
+        android:visibility="invisible"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="2dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/green"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/settings"
+        android:layout_alignStart="@+id/settings"
+        android:layout_marginStart="-87dp"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/green"
+        android:visibility="invisible"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="2dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/scroll"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/settings"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="1dp"
+        android:src="@drawable/seekbar"
+        android:visibility="invisible"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="2dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/value"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/settings"
+        android:layout_alignStart="@+id/settings"
+        android:layout_marginStart="-42dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/setting"
+        android:visibility="invisible"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="2dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/settings"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-22dp"
+        android:src="@drawable/settings" />
+
+    <Switch
+        android:id="@+id/connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send_Data" />
+
+
+</RelativeLayout>

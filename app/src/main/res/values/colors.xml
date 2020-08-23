@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="yellow">#DBCA33</color>
+    <color name="black">#0C0C0C</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimaryDark">#DBCA33</color>
+    <color name="trflogo_black">#0B0A0B</color>
+    <color name="white">#ffffff</color>
+    <color name="color1">#1B51D8</color>
+    <color name="color2">#8BC34A</color>
+    <color name="color3">#A78408</color>
+    <color name="color4">#5BEB0D</color>
+    <color name="color5">#E10FF8</color>
+    <color name="color6">#F10808</color>
+    <color name="color7">#EBFC05</color>
+    <color name="color8">#17E9E1</color>
+    <color name="color9">#0019AA</color>
+    <color name="color10">#FABD06</color>
+    <color name="color11">#F00050</color>
+    <color name="color12">#4409AC</color>
+    <color name="color13">#022B26</color>
+    <color name="color14">#26045F</color>
+    <color name="color15">#79260C</color>
+</resources>
+
+
