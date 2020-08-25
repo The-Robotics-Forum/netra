@@ -16,15 +16,15 @@ android:
     - extra-google-m2repository
     - extra-android-m2repository
     - addon-google_apis-google-$ANDROID_API_LEVEL
-  licenses:
-    - 'android-sdk-preview-license-.+'
-    - 'android-sdk-license-.+'
-    - 'google-gdk-license-.+'
+  #licenses:
+  #  - 'android-sdk-preview-license-.+'
+  #  - 'android-sdk-license-.+'
+  #  - 'google-gdk-license-.+'
 
 before_install:
   - chmod a+x gradlew
-before_script:
-  - mkdir -p "$ANDROID_HOME/licenses"
-  - cp ./google-licenses/* "$ANDROID_HOME/licenses/"
+#before_script:
+#  - mkdir -p "$ANDROID_HOME/licenses"
+#  - cp ./google-licenses/* "$ANDROID_HOME/licenses/"
 script:
   - ./gradlew build check --stacktrace
