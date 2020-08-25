@@ -1,5 +1,6 @@
 package org.opencv.android;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.SurfaceTexture;
@@ -110,7 +111,7 @@ public class Camera2Renderer extends CameraGLRendererBase {
                 mPreviewSize = new Size(bestWidth, bestHeight);
                 return true;
             }
-        } catch (CameraAccessException e) {
+        } catch (@SuppressLint("NewApi") CameraAccessException e) {
             Log.e(LOGTAG, "cacPreviewSize - Camera Access Exception");
         } catch (IllegalArgumentException e) {
             Log.e(LOGTAG, "cacPreviewSize - Illegal Argument Exception");
@@ -152,7 +153,7 @@ public class Camera2Renderer extends CameraGLRendererBase {
                 Log.i(LOGTAG, "Opening camera: " + mCameraID);
                 manager.openCamera(mCameraID, mStateCallback, mBackgroundHandler);
             }
-        } catch (CameraAccessException e) {
+        } catch (@SuppressLint("NewApi") CameraAccessException e) {
             Log.e(LOGTAG, "OpenCamera - Camera Access Exception");
         } catch (IllegalArgumentException e) {
             Log.e(LOGTAG, "OpenCamera - Illegal Argument Exception");
@@ -224,7 +225,7 @@ public class Camera2Renderer extends CameraGLRendererBase {
 
                                 mCaptureSession.setRepeatingRequest(mPreviewRequestBuilder.build(), null, mBackgroundHandler);
                                 Log.i(LOGTAG, "CameraPreviewSession has been started");
-                            } catch (CameraAccessException e) {
+                            } catch (@SuppressLint("NewApi") CameraAccessException e) {
                                 Log.e(LOGTAG, "createCaptureSession failed");
                             }
                             mCameraOpenCloseLock.release();
@@ -237,7 +238,7 @@ public class Camera2Renderer extends CameraGLRendererBase {
                             mCameraOpenCloseLock.release();
                         }
                     }, mBackgroundHandler);
-        } catch (CameraAccessException e) {
+        } catch (@SuppressLint("NewApi") CameraAccessException e) {
             Log.e(LOGTAG, "createCameraPreviewSession");
         } catch (InterruptedException e) {
             throw new RuntimeException(
