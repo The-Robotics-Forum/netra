@@ -11,6 +11,6 @@ android:
     - build-tools-27.0.3
     - android-27
 before_install:
-- yes | sdkmanager "platforms;android-28"
+- chmod a+x gradlew
 
 script: "./gradlew build --stacktrace"
