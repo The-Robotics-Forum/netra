@@ -14,8 +14,10 @@ This is an Open Source Project. All contributions are welcome. Please follow the
     4. Raise a Pull Request to the `develop` branch of this repository.
 
 **Make sure to follow these guidelines**
-1. If you are taking up any issue from the issue tracker, please name your commits in this form. This will automatically link the Issue to your commit.
+1. Run `gradlew check` or `./gradlew check` locally before pushing any commits or creating a Pull Request.
+    - If `gradlew check` is failing locally, your Pull Request will also fail and won't be able to merge.
+2. If you are taking up any issue from the issue tracker, please name your commits in this form. This will automatically link the Issue to your commit.
     - `Fix #{Issue Number}: Whatever change you did`
     - Example commit message: `Fix #9: Added a new function`
-2. Give "easy to understand" names to the branches you create in your forked repository
-3. While creating a Pull Request, explain in brief what changes you made.
+3. Give "easy to understand" names to the branches you create in your forked repository
+4. While creating a Pull Request, explain in brief what changes you made.
