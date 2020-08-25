@@ -12,10 +12,10 @@ android:
     - build-tools-$ANDROID_BUILD_TOOLS_VERSION
     - android-$ANDROID_API_LEVEL
     # Additional components
-    - extra-google-google_play_services
-    - extra-google-m2repository
-    - extra-android-m2repository
-    - addon-google_apis-google-$ANDROID_API_LEVEL
+    #- extra-google-google_play_services
+    #- extra-google-m2repository
+    #- extra-android-m2repository
+    #- addon-google_apis-google-$ANDROID_API_LEVEL
   licenses:
     - 'android-sdk-preview-license-.+'
     - 'android-sdk-license-.+'
@@ -26,6 +26,6 @@ before_install:
 before_script:
 #  - mkdir -p "$ANDROID_HOME/licenses"
 #  - cp ./google-licenses/* "$ANDROID_HOME/licenses/"
-  - yes | sdkmanager --licenses
+  - yes | sdkmanager --licenses && yes | sdkmanager --update
 script:
   - ./gradlew build check --stacktrace
