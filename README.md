@@ -1,6 +1,6 @@
-# TRF Level 1 Workshop Android Application
+# Netra - Android Application for TRF Level 1 Workshop
 
-Android Application that TRF uses for Level 1 Workshop.
+Netra is the Android Application that TRF uses for Level 1 Workshop.
 
 # Contribution Guidelines
 
