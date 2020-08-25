@@ -23,9 +23,9 @@ android:
 
 before_install:
   - chmod a+x gradlew
-before_script:
+  - yes | sdkmanager "platforms;android-28"
+# before_script:
 #  - mkdir -p "$ANDROID_HOME/licenses"
 #  - cp ./google-licenses/* "$ANDROID_HOME/licenses/"
-  - yes | sdkmanager --licenses && yes | sdkmanager --update
 script:
   - ./gradlew build check --stacktrace
