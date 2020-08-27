@@ -5,16 +5,16 @@
     android:layout_height="match_parent"
     android:keepScreenOn="true">
 
-    <comm.example.rane22sau.integrated_level_1.CameraSourcePreview
+    <com.vitpunerobotics.netra.CameraSourcePreview
         android:id="@+id/preview"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <comm.example.rane22sau.integrated_level_1.GraphicOverlay
+        <com.vitpunerobotics.netra.GraphicOverlay
             android:id="@+id/faceOverlay"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-    </comm.example.rane22sau.integrated_level_1.CameraSourcePreview>
+    </com.vitpunerobotics.netra.CameraSourcePreview>
 
     <Switch
         android:id="@+id/connection"
