@@ -1,4 +1,4 @@
-# Netra - Android App for TRF Level 1 Workshop [![Build Status](https://travis-ci.org/The-Robotics-Forum/netra.svg?branch=develop)](https://travis-ci.org/The-Robotics-Forum/netra)
+# Netra - Android App for TRF Level 1 Workshop [![Build Status](https://travis-ci.org/The-Robotics-Forum/netra.svg?branch=develop)](https://travis-ci.org/The-Robotics-Forum/netra) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Netra is the Android Application that TRF uses for Level 1 Workshop.
 
