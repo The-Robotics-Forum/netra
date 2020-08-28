@@ -22,12 +22,10 @@ class Voice_Control : MainActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_voice__control)
-        val b: ImageView
-        val t: TextView
-        val s: Button
-        t = findViewById<View>(R.id.textView) as TextView
-        b = findViewById<View>(R.id.btn) as ImageView
-        s = findViewById<View>(R.id.STOP) as Button
+
+        val t: TextView = findViewById<View>(R.id.textView) as TextView
+        val b: ImageView = findViewById<View>(R.id.btn) as ImageView
+        val s: Button = findViewById<View>(R.id.STOP) as Button
         val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.ENGLISH)

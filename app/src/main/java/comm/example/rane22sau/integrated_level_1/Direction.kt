@@ -1,7 +1,7 @@
 package comm.example.rane22sau.integrated_level_1
 
 class Direction {
-    var string: String? = null
+//    var string: String? = null
     var img_size = 0
     var x_face = 0f
     var y_face = 0f
@@ -34,19 +34,5 @@ class Direction {
         }
     }
 
-    fun print(string2: String?) {
-        /*if (MainActivity.mBluetoothAdapter.isEnabled()) {
-            boolean isMessageSent = true;
-            try {
-                OutputStream os = MainActivity.mBluetoothSocket.getOutputStream();
-                os.write(string2.getBytes());
-            } catch (IOException e) {
-                isMessageSent = false;
-                e.printStackTrace();
-            }
 
-        } else {
-            Log.d("Tag","hello");
-        }*/
-    }
 }
