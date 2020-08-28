@@ -5,7 +5,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "comm.example.rane22sau.integrated_level_1"
+        applicationId "com.vitpunerobotics.netra"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
