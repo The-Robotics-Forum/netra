@@ -73,12 +73,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void openActivity2() {
-
-        Intent intent = new Intent(this, Option.class);
-        startActivity(intent);
-
-    }
 
 
     public void onClickListPairedDevices(View view) {
@@ -178,7 +172,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            global_variables.setBT(1);
+            global_variables.bT=1;
             if (isBluetoothConnected) {
                 Toast.makeText(MainActivity.this, "Connected", Toast.LENGTH_SHORT).show();
                 list_paired_devices.clear();

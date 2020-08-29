@@ -93,9 +93,9 @@ public final class Face_Tracker extends MainActivity {
             public void onClick(View v) {
                 if (send == 0) {
                     Intent BTconnect = new Intent(getApplicationContext(), MainActivity.class);
-                    if (global_variables.BT == 0) {
+                    if (global_variables.bT == 0) {
                         startActivity(BTconnect);
-                        global_variables.BT = 1;
+                        global_variables.bT = 1;
                     }
                     send = 1;
                 } else {

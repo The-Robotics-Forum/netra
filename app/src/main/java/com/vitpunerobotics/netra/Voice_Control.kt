@@ -32,7 +32,7 @@ class Voice_Control : MainActivity() {
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.ENGLISH)
         b.setOnClickListener { startActivityForResult(intent, 1) }
         s.setOnClickListener {
-            if (global_variables.getBT() == 1) {
+            if (global_variables.bT == 1) {
                 sendMessage("S")
             }
         }
@@ -47,31 +47,31 @@ class Voice_Control : MainActivity() {
             val print = ""
             for (s in str) {
                 if (s.contains("forward")) {
-                    if (global_variables.getBT() == 1) {
+                    if (global_variables.bT == 1) {
                         sendMessage("F")
                     }
                     Log.d("TAG", s)
                     break
                 } else if (s.contains("backward")) {
-                    if (global_variables.getBT() == 1) {
+                    if (global_variables.bT == 1) {
                         sendMessage("B")
                     }
                     Log.d("TAG", s)
                     break
                 } else if (s.contains("left")) {
-                    if (global_variables.getBT() == 1) {
+                    if (global_variables.bT == 1) {
                         sendMessage("L")
                     }
                     Log.d("TAG", s)
                     break
                 } else if (s.contains("right")) {
-                    if (global_variables.getBT() == 1) {
+                    if (global_variables.bT == 1) {
                         sendMessage("R")
                     }
                     Log.d("TAG", s)
                     break
                 } else if (s.contains("stop")) {
-                    if (global_variables.getBT() == 1) {
+                    if (global_variables.bT == 1) {
                         sendMessage("S")
                     }
                     Log.d("TAG", s)
