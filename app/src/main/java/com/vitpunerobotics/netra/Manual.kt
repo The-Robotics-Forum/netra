@@ -17,31 +17,31 @@ class Manual : MainActivity() {
         var backward = findViewById(R.id.backward) as Button
         var t = findViewById(R.id.STT) as TextView
         right.setOnClickListener(View.OnClickListener {
-            if (global_variables.getBT() == 1) {
+            if (global_variables.bT == 1) {
                 sendMessage("R")
                 t.setText("R")
             }
         })
         left.setOnClickListener(View.OnClickListener {
-            if (global_variables.getBT() == 1) {
+            if (global_variables.bT == 1) {
                 sendMessage("L")
             }
             t.setText("L")
         })
         forward.setOnClickListener(View.OnClickListener {
-            if (global_variables.getBT() == 1) {
+            if (global_variables.bT == 1) {
                 sendMessage("F")
             }
             t.setText("F")
         })
         backward.setOnClickListener(View.OnClickListener {
-            if (global_variables.getBT() == 1) {
+            if (global_variables.bT == 1) {
                 sendMessage("B")
             }
             t.setText("B")
         })
         stop.setOnClickListener(View.OnClickListener {
-            if (global_variables.getBT() == 1) {
+            if (global_variables.bT == 1) {
                 sendMessage("S")
             }
             t.setText("S")

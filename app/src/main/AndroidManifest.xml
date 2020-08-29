@@ -23,7 +23,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.vitpunerobotics.netra.Option" />
         <activity
             android:name="com.vitpunerobotics.netra.Voice_Control"
             android:theme="@style/AppTheme.NoActionBar" />
