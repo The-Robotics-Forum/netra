@@ -1,50 +1,52 @@
-package com.vitpunerobotics.netra
+package com.vitpunerobotics.netra.activities
 
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import com.vitpunerobotics.netra.R
+import com.vitpunerobotics.netra.global_variables
 
 class Manual : MainActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_manual)
-        var right = findViewById(R.id.right) as Button
-        var left = findViewById(R.id.left) as Button
-        var stop = findViewById(R.id.stop) as Button
-        var forward = findViewById(R.id.forward) as Button
-        var backward = findViewById(R.id.backward) as Button
-        var t = findViewById(R.id.STT) as TextView
+        var right = findViewById<Button>(R.id.right)
+        var left = findViewById<Button>(R.id.left)
+        var stop = findViewById<Button>(R.id.stop)
+        var forward = findViewById<Button>(R.id.forward)
+        var backward = findViewById<Button>(R.id.backward)
+        var t = findViewById<TextView>(R.id.STT)
         right.setOnClickListener(View.OnClickListener {
             if (global_variables.bT == 1) {
                 sendMessage("R")
-                t.setText("R")
+                t.text = "R"
             }
         })
         left.setOnClickListener(View.OnClickListener {
             if (global_variables.bT == 1) {
                 sendMessage("L")
             }
-            t.setText("L")
+            t.text = "L"
         })
         forward.setOnClickListener(View.OnClickListener {
             if (global_variables.bT == 1) {
                 sendMessage("F")
             }
-            t.setText("F")
+            t.text = "F"
         })
         backward.setOnClickListener(View.OnClickListener {
             if (global_variables.bT == 1) {
                 sendMessage("B")
             }
-            t.setText("B")
+            t.text = "B"
         })
         stop.setOnClickListener(View.OnClickListener {
             if (global_variables.bT == 1) {
                 sendMessage("S")
             }
-            t.setText("S")
+            t.text = "S"
         })
     }
 }

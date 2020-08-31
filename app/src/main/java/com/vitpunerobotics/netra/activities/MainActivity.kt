@@ -1,4 +1,4 @@
-package com.vitpunerobotics.netra
+package com.vitpunerobotics.netra.activities
 
 import android.bluetooth.BluetoothAdapter
 import android.bluetooth.BluetoothSocket
@@ -10,7 +10,8 @@ import android.util.Log
 import android.view.View
 import android.widget.*
 import android.widget.AdapterView.OnItemClickListener
-import com.vitpunerobotics.netra.MainActivity
+import com.vitpunerobotics.netra.R
+import com.vitpunerobotics.netra.global_variables
 import java.io.IOException
 import java.util.*
 
@@ -30,15 +31,15 @@ open class MainActivity : AppCompatActivity() {
         list_paired_devices = ArrayList()
         stringArrayAdapter = ArrayAdapter(applicationContext, android.R.layout.simple_list_item_1, list_paired_devices)
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter()
-        if (!mBluetoothAdapter!!.isEnabled()) {
+        if (!mBluetoothAdapter!!.isEnabled) {
             val enableBtIntent = Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE)
             startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT)
         }
-        lv_paired_devices.setOnItemClickListener(OnItemClickListener { parent, view, position, id ->
+        lv_paired_devices.onItemClickListener = OnItemClickListener { parent, view, position, id ->
             val data = (view as TextView).text.toString().trim { it <= ' ' }
             val macAddress = data.substring(data.length - 17)
             ConnectBluetooth().execute(macAddress)
-        })
+        }
         isBluetoothConnected = true
     }
 
@@ -93,7 +94,7 @@ open class MainActivity : AppCompatActivity() {
             progressBar.visibility = View.VISIBLE
         }
 
-        protected override fun doInBackground(vararg strings: String?): Void? {
+        override fun doInBackground(vararg strings: String?): Void? {
             try {
                 val device = mBluetoothAdapter!!.getRemoteDevice(strings[0])
                 mBluetoothSocket = device.createRfcommSocketToServiceRecord(UUID.fromString(MY_UUID.toString()))

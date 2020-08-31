@@ -23,6 +23,7 @@ import android.graphics.Paint
 import android.util.Log
 import com.google.android.gms.vision.face.Face
 import com.vitpunerobotics.netra.GraphicOverlay.Graphic
+import com.vitpunerobotics.netra.activities.Face_Tracker
 
 /**
  * Graphic instance for rendering face position, orientation, and landmarks within an associated
@@ -60,7 +61,7 @@ internal class FaceGraphic(overlay: GraphicOverlay?, private val mContext: Conte
         val y = translateY(face.position.y + face.height / 2)
         val string = direction.getDirection(x, y, face.width, face.height)
         canvas!!.drawCircle(x, y, FACE_POSITION_RADIUS, mFacePositionPaint)
-        canvas!!.drawText("id: $mFaceId", x + ID_X_OFFSET, y + ID_Y_OFFSET, mIdPaint)
+        canvas.drawText("id: $mFaceId", x + ID_X_OFFSET, y + ID_Y_OFFSET, mIdPaint)
         val xOffset = scaleX(face.width / 2.0f)
         val yOffset = scaleY(face.height / 2.0f)
         val left = x - xOffset

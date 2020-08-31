@@ -1,4 +1,4 @@
-package com.vitpunerobotics.netra
+package com.vitpunerobotics.netra.activities
 
 import android.Manifest
 import android.content.Intent
@@ -13,6 +13,7 @@ import android.view.WindowManager
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.SeekBar
+import com.vitpunerobotics.netra.R
 import org.opencv.android.BaseLoaderCallback
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewFrame
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2
@@ -56,25 +57,25 @@ class Color_Detector : MainActivity(), CvCameraViewListener2 {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_color__detector)
-        var red1 = findViewById(R.id.red) as ImageView
-        var blue1 = findViewById(R.id.blue) as ImageView
-        var green1 = findViewById(R.id.green) as ImageView
-        var scroll = findViewById(R.id.scroll) as ImageView
-        var setting = findViewById(R.id.settings) as ImageView
+        var red1 = findViewById<ImageView>(R.id.red)
+        var blue1 = findViewById<ImageView>(R.id.blue)
+        var green1 = findViewById<ImageView>(R.id.green)
+        var scroll = findViewById<ImageView>(R.id.scroll)
+        var setting = findViewById<ImageView>(R.id.settings)
         setting.setOnClickListener(View.OnClickListener {
             if (set_vis == 0) {
                 set_vis = 1
-                red1.setVisibility(View.VISIBLE)
-                green1.setVisibility(View.VISIBLE)
-                blue1.setVisibility(View.VISIBLE)
-                scroll.setVisibility(View.VISIBLE)
+                red1.visibility = View.VISIBLE
+                green1.visibility = View.VISIBLE
+                blue1.visibility = View.VISIBLE
+                scroll.visibility = View.VISIBLE
             } else {
                 if (set_vis == 1) {
                     set_vis = 0
-                    red1.setVisibility(View.INVISIBLE)
-                    green1.setVisibility(View.INVISIBLE)
-                    blue1.setVisibility(View.INVISIBLE)
-                    scroll.setVisibility(View.INVISIBLE)
+                    red1.visibility = View.INVISIBLE
+                    green1.visibility = View.INVISIBLE
+                    blue1.visibility = View.INVISIBLE
+                    scroll.visibility = View.INVISIBLE
                 }
             }
         })
@@ -84,77 +85,77 @@ class Color_Detector : MainActivity(), CvCameraViewListener2 {
         v_max = findViewById(R.id.v_max)
         s_min = findViewById(R.id.s_min)
         s_max = findViewById(R.id.s_max)
-        h_max?.setMax(255)
-        h_min?.setMax(255)
-        v_max?.setMax(255)
-        v_min?.setMax(255)
-        s_max?.setMax(255)
-        s_min?.setMax(255)
-        var done = findViewById(R.id.done) as Button
+        h_max?.max = 255
+        h_min?.max = 255
+        v_max?.max = 255
+        v_min?.max = 255
+        s_max?.max = 255
+        s_min?.max = 255
+        var done = findViewById<Button>(R.id.done)
         done.setOnClickListener(View.OnClickListener {
-            h_max?.setVisibility(View.INVISIBLE)
-            h_min?.setVisibility(View.INVISIBLE)
-            s_max?.setVisibility(View.INVISIBLE)
-            s_min?.setVisibility(View.INVISIBLE)
-            v_min?.setVisibility(View.INVISIBLE)
-            v_max?.setVisibility(View.INVISIBLE)
-            done.setVisibility(View.INVISIBLE)
+            h_max?.visibility = View.INVISIBLE
+            h_min?.visibility = View.INVISIBLE
+            s_max?.visibility = View.INVISIBLE
+            s_min?.visibility = View.INVISIBLE
+            v_min?.visibility = View.INVISIBLE
+            v_max?.visibility = View.INVISIBLE
+            done.visibility = View.INVISIBLE
         })
         scroll.setOnClickListener(View.OnClickListener {
-            h_max!!.setVisibility(View.VISIBLE)
-            h_min!!.setVisibility(View.VISIBLE)
-            s_max!!.setVisibility(View.VISIBLE)
-            s_min!!.setVisibility(View.VISIBLE)
-            v_min!!.setVisibility(View.VISIBLE)
-            v_max!!.setVisibility(View.VISIBLE)
-            red1.setVisibility(View.INVISIBLE)
-            green1.setVisibility(View.INVISIBLE)
-            blue1.setVisibility(View.INVISIBLE)
-            scroll.setVisibility(View.INVISIBLE)
-            done.setVisibility(View.VISIBLE)
+            h_max!!.visibility = View.VISIBLE
+            h_min!!.visibility = View.VISIBLE
+            s_max!!.visibility = View.VISIBLE
+            s_min!!.visibility = View.VISIBLE
+            v_min!!.visibility = View.VISIBLE
+            v_max!!.visibility = View.VISIBLE
+            red1.visibility = View.INVISIBLE
+            green1.visibility = View.INVISIBLE
+            blue1.visibility = View.INVISIBLE
+            scroll.visibility = View.INVISIBLE
+            done.visibility = View.VISIBLE
         })
         red1.setOnClickListener(View.OnClickListener {
-            h_min!!.setProgress(0)
-            h_max!!.setProgress(0)
-            s_min!!.setProgress(100)
-            s_max!!.setProgress(255)
-            v_min!!.setProgress(100)
-            v_max!!.setProgress(255)
-            red1.setVisibility(View.INVISIBLE)
-            green1.setVisibility(View.INVISIBLE)
-            blue1.setVisibility(View.INVISIBLE)
-            scroll.setVisibility(View.INVISIBLE)
+            h_min!!.progress = 0
+            h_max!!.progress = 0
+            s_min!!.progress = 100
+            s_max!!.progress = 255
+            v_min!!.progress = 100
+            v_max!!.progress = 255
+            red1.visibility = View.INVISIBLE
+            green1.visibility = View.INVISIBLE
+            blue1.visibility = View.INVISIBLE
+            scroll.visibility = View.INVISIBLE
         })
         blue1.setOnClickListener(View.OnClickListener {
-            h_min!!.setProgress(240)
-            h_max!!.setProgress(255)
-            s_min!!.setProgress(100)
-            s_max!!.setProgress(255)
-            v_min!!.setProgress(100)
-            v_max!!.setProgress(255)
-            red1.setVisibility(View.INVISIBLE)
-            green1.setVisibility(View.INVISIBLE)
-            blue1.setVisibility(View.INVISIBLE)
-            scroll.setVisibility(View.INVISIBLE)
+            h_min!!.progress = 240
+            h_max!!.progress = 255
+            s_min!!.progress = 100
+            s_max!!.progress = 255
+            v_min!!.progress = 100
+            v_max!!.progress = 255
+            red1.visibility = View.INVISIBLE
+            green1.visibility = View.INVISIBLE
+            blue1.visibility = View.INVISIBLE
+            scroll.visibility = View.INVISIBLE
         })
         green1.setOnClickListener(View.OnClickListener {
-            h_min!!.setProgress(120)
-            h_max!!.setProgress(150)
-            s_min!!.setProgress(100)
-            s_max!!.setProgress(255)
-            v_min!!.setProgress(50)
-            v_max!!.setProgress(155)
-            red1.setVisibility(View.INVISIBLE)
-            green1.setVisibility(View.INVISIBLE)
-            blue1.setVisibility(View.INVISIBLE)
-            scroll.setVisibility(View.INVISIBLE)
+            h_min!!.progress = 120
+            h_max!!.progress = 150
+            s_min!!.progress = 100
+            s_max!!.progress = 255
+            v_min!!.progress = 50
+            v_max!!.progress = 155
+            red1.visibility = View.INVISIBLE
+            green1.visibility = View.INVISIBLE
+            blue1.visibility = View.INVISIBLE
+            scroll.visibility = View.INVISIBLE
         })
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_DENIED) {
             ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.CAMERA), 101)
         }
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
         javaCameraView = findViewById(R.id.cameraView)
-        javaCameraView.setVisibility(SurfaceView.VISIBLE)
+        javaCameraView.visibility = SurfaceView.VISIBLE
         javaCameraView.setCvCameraViewListener(this)
     }
 

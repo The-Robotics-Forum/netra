@@ -1,4 +1,4 @@
-package com.vitpunerobotics.netra
+package com.vitpunerobotics.netra.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
+import com.vitpunerobotics.netra.R
 
 class splashScreen : MainActivity() {
 
@@ -13,8 +14,8 @@ class splashScreen : MainActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
-        var Im1 = findViewById(R.id.imageView2) as ImageView
-        var Im2 = findViewById(R.id.im2) as ImageView
+        var Im1 = findViewById<ImageView>(R.id.imageView2)
+        var Im2 = findViewById<ImageView>(R.id.im2)
         val background: Thread = object : Thread() {
             override fun run() {
                 try {
@@ -28,8 +29,8 @@ class splashScreen : MainActivity() {
                     sleep(3 * 1000.toLong())
                 } catch (e: Exception) {
                 } finally {
-                    Im2.setVisibility(View.INVISIBLE)
-                    Im1.setVisibility(View.INVISIBLE)
+                    Im2.visibility = View.INVISIBLE
+                    Im1.visibility = View.INVISIBLE
                     //Intent i=new Intent(getBaseContext(),Home.class);
                     val i = Intent(baseContext, demo::class.java)
                     startActivity(i)

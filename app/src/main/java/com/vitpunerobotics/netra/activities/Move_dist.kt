@@ -1,4 +1,4 @@
-package com.vitpunerobotics.netra
+package com.vitpunerobotics.netra.activities
 
 import android.Manifest
 import android.content.Intent
@@ -12,8 +12,9 @@ import android.view.View
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.SeekBar
-import android.widget.Switch
 import android.widget.TextView
+import com.vitpunerobotics.netra.R
+import com.vitpunerobotics.netra.global_variables
 import com.vitpunerobotics.netra.global_variables.bT
 import org.opencv.android.BaseLoaderCallback
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewFrame
@@ -59,10 +60,6 @@ class Move_dist : MainActivity(), CvCameraViewListener2 {
         startActivity(b)
     }
 
-    override fun onResume() {
-        super.onResume()
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val BTconnect = Intent(applicationContext, MainActivity::class.java)
@@ -71,11 +68,11 @@ class Move_dist : MainActivity(), CvCameraViewListener2 {
         }
         setContentView(R.layout.activity_move_dist)
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
-        var red = findViewById(R.id.Red) as Button
-        var blue = findViewById(R.id.Blue) as Button
-        var green = findViewById(R.id.Green) as Button
+        var red = findViewById<Button>(R.id.Red)
+        var blue = findViewById<Button>(R.id.Blue)
+        var green = findViewById<Button>(R.id.Green)
         text = findViewById(R.id.dist)
-        text!!.setText(t.toString())
+        text!!.text = t.toString()
         red.setOnClickListener(View.OnClickListener {
             h_min!!.progress = 161
             h_max!!.progress = 188
@@ -104,7 +101,7 @@ class Move_dist : MainActivity(), CvCameraViewListener2 {
             ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.CAMERA), 101)
         }
         javaCameraView = findViewById(R.id.javaCameraView)
-        javaCameraView.setVisibility(SurfaceView.VISIBLE)
+        javaCameraView.visibility = SurfaceView.VISIBLE
         javaCameraView.setCvCameraViewListener(this)
         h_min = findViewById(R.id.h_min)
         h_max = findViewById(R.id.h_max)
@@ -112,19 +109,19 @@ class Move_dist : MainActivity(), CvCameraViewListener2 {
         v_max = findViewById(R.id.v_max)
         s_min = findViewById(R.id.s_min)
         s_max = findViewById(R.id.s_max)
-        h_max!!.setMax(255)
-        h_min!!.setMax(255)
-        v_max!!.setMax(255)
-        v_min!!.setMax(255)
-        s_max!!.setMax(255)
-        s_min!!.setMax(255)
+        h_max!!.max = 255
+        h_min!!.max = 255
+        v_max!!.max = 255
+        v_min!!.max = 255
+        s_max!!.max = 255
+        s_min!!.max = 255
         //Core.inRange(B,new Scalar(gv.a,gv.c,gv.b), new Scalar(gv.d,gv.e,gv.f),B);
-        h_min!!.setProgress(global_variables.a)
-        h_max!!.setProgress(global_variables.d)
-        s_min!!.setProgress(global_variables.c)
-        s_max!!.setProgress(global_variables.e)
-        v_min!!.setProgress(global_variables.b)
-        v_max!!.setProgress(global_variables.f)
+        h_min!!.progress = global_variables.a
+        h_max!!.progress = global_variables.d
+        s_min!!.progress = global_variables.c
+        s_max!!.progress = global_variables.e
+        v_min!!.progress = global_variables.b
+        v_max!!.progress = global_variables.f
     }
 
     override fun onCameraViewStarted(width: Int, height: Int) {
@@ -180,7 +177,7 @@ class Move_dist : MainActivity(), CvCameraViewListener2 {
         Log.d("TAG", "DISTANCE   $distance")
         t = distance
         //Toast.makeText(getApplicationContext(), (int) distance,Toast.LENGTH_SHORT).show();
-        finalDistance = distance as Double
+        finalDistance = distance
         runOnUiThread { text!!.text = finalDistance.toString() }
         if (finalDistance <= 30 && finalDistance >= 25) {
             val i = Intent(applicationContext, Main3Activity::class.java)

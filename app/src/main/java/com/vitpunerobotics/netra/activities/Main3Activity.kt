@@ -1,4 +1,4 @@
-package com.vitpunerobotics.netra
+package com.vitpunerobotics.netra.activities
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -13,6 +13,7 @@ import com.google.android.gms.vision.Detector
 import com.google.android.gms.vision.text.TextBlock
 import com.google.android.gms.vision.text.TextRecognizer
 import com.orhanobut.logger.Logger
+import com.vitpunerobotics.netra.R
 import kotlinx.android.synthetic.main.content_main3.*
 import org.jetbrains.anko.toast
 import kotlin.properties.Delegates

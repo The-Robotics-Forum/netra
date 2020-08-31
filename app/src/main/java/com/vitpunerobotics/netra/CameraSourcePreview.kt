@@ -16,7 +16,6 @@
 package com.vitpunerobotics.netra
 
 import android.Manifest
-import android.app.Application
 import android.content.Context
 import android.content.pm.PackageManager
 import android.content.res.Configuration
@@ -27,6 +26,7 @@ import android.view.SurfaceHolder
 import android.view.SurfaceView
 import android.view.ViewGroup
 import com.google.android.gms.vision.CameraSource
+import com.vitpunerobotics.netra.activities.Face_Tracker
 import java.io.IOException
 import kotlin.math.roundToInt
 
@@ -70,7 +70,7 @@ class CameraSourcePreview(private val mContext: Context, attrs: AttributeSet?) :
     @Throws(IOException::class)
     private fun startIfReady() {
         if (mStartRequested && mSurfaceAvailable) {
-            var c: Context = context;
+            var c: Context = context
             if (ActivityCompat.checkSelfPermission(context, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
                 // TODO: Consider calling
                 //    ActivityCompat#requestPermissions

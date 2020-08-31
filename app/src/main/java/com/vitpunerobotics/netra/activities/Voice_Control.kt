@@ -1,4 +1,4 @@
-package com.vitpunerobotics.netra
+package com.vitpunerobotics.netra.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,6 +8,8 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import com.vitpunerobotics.netra.R
+import com.vitpunerobotics.netra.global_variables
 import java.io.IOException
 import java.util.*
 
@@ -24,9 +26,9 @@ class Voice_Control : MainActivity() {
 //        val b: ImageView
 //        val t: TextView
 //        val s: Button
-        val t = findViewById(R.id.textView) as TextView
-        val b = findViewById(R.id.btn) as ImageView
-        val s = findViewById(R.id.STOP) as Button
+        val t = findViewById<TextView>(R.id.textView)
+        val b = findViewById<ImageView>(R.id.btn)
+        val s = findViewById<Button>(R.id.STOP)
         val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.ENGLISH)

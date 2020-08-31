@@ -1,4 +1,4 @@
-package com.vitpunerobotics.netra
+package com.vitpunerobotics.netra.activities
 
 import android.Manifest
 import android.app.Activity
@@ -12,10 +12,8 @@ import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v4.app.ActivityCompat
 import android.util.Log
-import android.view.Display
 import android.view.View
 import android.widget.Switch
-import android.widget.TextView
 import com.google.android.gms.common.ConnectionResult
 import com.google.android.gms.common.GoogleApiAvailability
 import com.google.android.gms.vision.CameraSource
@@ -24,8 +22,7 @@ import com.google.android.gms.vision.MultiProcessor
 import com.google.android.gms.vision.Tracker
 import com.google.android.gms.vision.face.Face
 import com.google.android.gms.vision.face.FaceDetector
-import com.vitpunerobotics.netra.Face_Tracker
-import com.vitpunerobotics.netra.MainActivity
+import com.vitpunerobotics.netra.*
 import java.io.IOException
 
 /*
@@ -259,7 +256,7 @@ class Face_Tracker : MainActivity() {
      * Face tracker for each detected individual. This maintains a face graphic within the app's
      * associated face overlay.
      */
-    private inner class GraphicFaceTracker<T> internal constructor(private val mOverlay: GraphicOverlay?, context: Context?) : Tracker<Face?>() {
+    private inner class GraphicFaceTracker<T>(private val mOverlay: GraphicOverlay?, context: Context?) : Tracker<Face?>() {
         private val mFaceGraphic: FaceGraphic
 
         /**
