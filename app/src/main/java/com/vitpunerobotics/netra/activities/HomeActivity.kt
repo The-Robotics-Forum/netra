@@ -10,7 +10,7 @@ import com.vitpunerobotics.netra.global_variables
 
 class HomeActivity : AppCompatActivity() {
 
-    var g: global_variables? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
@@ -23,7 +23,7 @@ class HomeActivity : AppCompatActivity() {
         var manual = findViewById<Button>(R.id.manual)
         manual.setOnClickListener(View.OnClickListener {
             val bluetooth_intend = Intent(applicationContext, ManualControlActivity::class.java)
-            //global_variables gv;
+
             startActivity(bluetooth_intend)
         })
         voicebt.setOnClickListener(View.OnClickListener {

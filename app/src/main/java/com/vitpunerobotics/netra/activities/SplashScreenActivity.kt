@@ -2,13 +2,14 @@ package com.vitpunerobotics.netra.activities
 
 import android.content.Intent
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import com.vitpunerobotics.netra.R
 
-class SplashScreenActivity : BluetoothActivity() {
+class SplashScreenActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,7 +33,7 @@ class SplashScreenActivity : BluetoothActivity() {
                 } finally {
                     Im2.visibility = View.INVISIBLE
                     Im1.visibility = View.INVISIBLE
-                    //Intent i=new Intent(getBaseContext(),Home.class);
+
                     val i = Intent(baseContext, HomeActivity::class.java)
                     startActivity(i)
                     overridePendingTransition(R.anim.slide_down, R.anim.fade_out)
