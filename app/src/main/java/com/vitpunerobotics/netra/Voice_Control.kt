@@ -21,12 +21,12 @@ class Voice_Control : MainActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_voice__control)
-        val b: ImageView
-        val t: TextView
-        val s: Button
-        t = findViewById(R.id.textView)
-        b = findViewById(R.id.btn)
-        s = findViewById(R.id.STOP)
+//        val b: ImageView
+//        val t: TextView
+//        val s: Button
+        val t = findViewById(R.id.textView) as TextView
+        val b = findViewById(R.id.btn) as ImageView
+        val s = findViewById(R.id.STOP) as Button
         val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.ENGLISH)
@@ -88,10 +88,10 @@ class Voice_Control : MainActivity() {
 
     @Throws(IOException::class)
     fun putString(str: String) {
-        if (mBluetoothAdapter.isEnabled) {
+        if (mBluetoothAdapter!!.isEnabled) {
             var isMessageSent = true
             try {
-                val os = mBluetoothSocket.outputStream
+                val os = mBluetoothSocket!!.outputStream
                 os.write(str.toByteArray())
             } catch (e: IOException) {
                 isMessageSent = false

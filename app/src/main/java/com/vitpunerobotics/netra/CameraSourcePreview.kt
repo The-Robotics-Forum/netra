@@ -100,8 +100,8 @@ class CameraSourcePreview(private val mContext: Context, attrs: AttributeSet?) :
     }
 
     override fun onLayout(changed: Boolean, left: Int, top: Int, right: Int, bottom: Int) {
-        var width = Face_Tracker.size.y
-        var height = Face_Tracker.size.x
+        var width = Face_Tracker.size!!.y
+        var height = Face_Tracker.size!!.x
         if (mCameraSource != null) {
             val size = mCameraSource!!.previewSize
             if (size != null) {

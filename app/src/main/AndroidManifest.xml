@@ -45,10 +45,6 @@
             android:label="@string/demo"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.vitpunerobotics.netra.Main2Activity"
-            android:screenOrientation="landscape"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name="com.vitpunerobotics.netra.Move_dist"
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -59,13 +55,6 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.vitpunerobotics.netra.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.vitpunerobotics.netra.Home"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.vitpunerobotics.netra.Gesture"
-            android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
