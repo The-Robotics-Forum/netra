@@ -14,7 +14,7 @@ class SplashScreenActivity : BluetoothActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen_activity)
 
-        val Im1 = findViewById<ImageView>(R.id.imageView2)
+        val Im1 = findViewById<ImageView>(R.id.iv_trf_logo)
         val Im2 = findViewById<ImageView>(R.id.im2)
 
         val background: Thread = object : Thread() {

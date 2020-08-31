@@ -19,13 +19,11 @@
         tools:layout_editor_absoluteY="0dp">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/iv_trf_logo"
             android:layout_width="290dp"
             android:layout_height="248dp"
             android:layout_marginStart="60dp"
-            android:layout_marginLeft="60dp"
             android:layout_marginEnd="61dp"
-            android:layout_marginRight="61dp"
             android:elevation="1dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -48,10 +46,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="300dp"
-        android:layout_marginLeft="300dp"
         android:layout_marginTop="153dp"
         android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
         android:layout_marginBottom="73dp"
         android:elevation="1dp"
         android:text="CREATED BY"
@@ -62,7 +58,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/iv_trf_robosoft_logo"
         android:layout_width="131dp"
         android:layout_height="35dp"
         android:layout_marginStart="253dp"
@@ -73,4 +69,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

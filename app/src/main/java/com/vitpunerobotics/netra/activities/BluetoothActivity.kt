@@ -23,6 +23,16 @@ open class BluetoothActivity : AppCompatActivity() {
     private lateinit var progressBar: ProgressBar
     private lateinit var list_paired_devices: ArrayList<String>
     private lateinit var stringArrayAdapter: ArrayAdapter<String>
+
+    companion object {
+        private const val REQUEST_ENABLE_BT = 1001
+        private const val TAG = "ConnectThread"
+        private val MY_UUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB")
+        var mBluetoothAdapter: BluetoothAdapter? = null
+        var mBluetoothSocket: BluetoothSocket? = null
+        var isBluetoothConnected = false
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bluetooth)
@@ -118,14 +128,5 @@ open class BluetoothActivity : AppCompatActivity() {
             } else Toast.makeText(this@BluetoothActivity, "Connection Failed", Toast.LENGTH_SHORT).show()
             progressBar.visibility = View.INVISIBLE
         }
-    }
-
-    companion object {
-        private const val REQUEST_ENABLE_BT = 1001
-        private const val TAG = "ConnectThread"
-        private val MY_UUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB")
-        var mBluetoothAdapter: BluetoothAdapter? = null
-        var mBluetoothSocket: BluetoothSocket? = null
-        var isBluetoothConnected = false
     }
 }
