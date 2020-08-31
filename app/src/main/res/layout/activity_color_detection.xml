@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.vitpunerobotics.netra.activities.Color_Detector">
+    tools:context="com.vitpunerobotics.netra.activities.ColorDetectionActivity">
 
 
     <org.opencv.android.JavaCameraView

@@ -26,7 +26,7 @@ import org.opencv.core.*
 import org.opencv.imgproc.Imgproc
 import java.util.*
 
-class Move_dist : MainActivity(), CvCameraViewListener2 {
+class Move_dist : BluetoothActivity(), CvCameraViewListener2 {
 
 
     var finalDistance = 0.0
@@ -56,13 +56,13 @@ class Move_dist : MainActivity(), CvCameraViewListener2 {
 
     override fun onBackPressed() {
         super.onBackPressed()
-        val b = Intent(applicationContext, demo::class.java)
+        val b = Intent(applicationContext, HomeActivity::class.java)
         startActivity(b)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val BTconnect = Intent(applicationContext, MainActivity::class.java)
+        val BTconnect = Intent(applicationContext, BluetoothActivity::class.java)
         if (bT == 0) {
             startActivity(BTconnect)
         }

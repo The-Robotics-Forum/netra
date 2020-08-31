@@ -23,7 +23,7 @@ import android.graphics.Paint
 import android.util.Log
 import com.google.android.gms.vision.face.Face
 import com.vitpunerobotics.netra.GraphicOverlay.Graphic
-import com.vitpunerobotics.netra.activities.Face_Tracker
+import com.vitpunerobotics.netra.activities.FaceTrackerActivity
 
 /**
  * Graphic instance for rendering face position, orientation, and landmarks within an associated
@@ -69,7 +69,7 @@ internal class FaceGraphic(overlay: GraphicOverlay?, private val mContext: Conte
         val right = x + xOffset
         val bottom = y + yOffset
         canvas.drawRect(left, top, right, bottom, mBoxPaint)
-        if (Face_Tracker.send == 1) {
+        if (FaceTrackerActivity.send == 1) {
             Log.d("BT", "Calling send message")
             //sendMessage(string);
         }

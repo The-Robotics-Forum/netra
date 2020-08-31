@@ -24,7 +24,7 @@ import org.opencv.core.*
 import org.opencv.imgproc.Imgproc
 import java.util.*
 
-class Color_Detector : MainActivity(), CvCameraViewListener2 {
+class ColorDetectionActivity : BluetoothActivity(), CvCameraViewListener2 {
 
     var h_min: SeekBar? = null
     var h_max: SeekBar? = null
@@ -50,13 +50,13 @@ class Color_Detector : MainActivity(), CvCameraViewListener2 {
 
     override fun onBackPressed() {
         super.onBackPressed()
-        val b = Intent(applicationContext, demo::class.java)
+        val b = Intent(applicationContext, HomeActivity::class.java)
         startActivity(b)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_color__detector)
+        setContentView(R.layout.activity_color_detection)
         var red1 = findViewById<ImageView>(R.id.red)
         var blue1 = findViewById<ImageView>(R.id.blue)
         var green1 = findViewById<ImageView>(R.id.green)

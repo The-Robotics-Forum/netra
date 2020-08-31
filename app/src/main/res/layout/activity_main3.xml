@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context="com.vitpunerobotics.netra.activities.Main3Activity">
 
-
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -14,8 +13,6 @@
         android:background="?attr/colorPrimary"
         app:popupTheme="@style/AppTheme.NoActionBar" />
 
-
     <include layout="@layout/content_main3" />
-
 
 </android.support.design.widget.CoordinatorLayout>

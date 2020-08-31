@@ -29,7 +29,7 @@ import kotlin.properties.Delegates
  * :=  Fun  :  Coffee  :  Code
  *
  **/
-class Main3Activity : MainActivity() {
+class Main3Activity : BluetoothActivity() {
 
     private var mCameraSource by Delegates.notNull<CameraSource>()
     private var textRecognizer by Delegates.notNull<TextRecognizer>()
@@ -37,7 +37,7 @@ class Main3Activity : MainActivity() {
     private val PERMISSION_REQUEST_CAMERA = 100
     override fun onBackPressed() {
         super.onBackPressed()
-        val b = Intent(applicationContext, demo::class.java)
+        val b = Intent(applicationContext, HomeActivity::class.java)
         startActivity(b)
     }
 

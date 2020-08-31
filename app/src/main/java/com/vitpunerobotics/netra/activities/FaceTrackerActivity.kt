@@ -44,12 +44,12 @@ import java.io.IOException
  * Activity for the face tracker app.  This app detects faces with the rear facing camera, and draws
  * overlay graphics to indicate the position, size, and ID of each face.
  */
-class Face_Tracker : MainActivity() {
+class FaceTrackerActivity : BluetoothActivity() {
 
     private lateinit var mPreview: CameraSourcePreview
     private lateinit var mGraphicOverlay: GraphicOverlay
     private lateinit var connectbt: Switch
-    private var mCameraSource: CameraSource? =  null
+    private var mCameraSource: CameraSource? = null
     //==============================================================================================
     // Activity Methods
     //==============================================================================================
@@ -58,13 +58,13 @@ class Face_Tracker : MainActivity() {
      */
     override fun onBackPressed() {
         super.onBackPressed()
-        val b = Intent(applicationContext, demo::class.java)
+        val b = Intent(applicationContext, HomeActivity::class.java)
         startActivity(b)
     }
 
     public override fun onCreate(icicle: Bundle?) {
         super.onCreate(icicle)
-        setContentView(R.layout.activity_face__tracker)
+        setContentView(R.layout.activity_face_tracker)
         var display = windowManager.defaultDisplay
         size = Point()
         display!!.getSize(size)
@@ -73,7 +73,7 @@ class Face_Tracker : MainActivity() {
         connectbt = findViewById(R.id.connection)
         connectbt.setOnClickListener(View.OnClickListener {
             if (send == 0) {
-                val BTconnect = Intent(applicationContext, MainActivity::class.java)
+                val BTconnect = Intent(applicationContext, BluetoothActivity::class.java)
                 if (global_variables.bT == 0) {
                     startActivity(BTconnect)
                     global_variables.bT = 1
@@ -248,7 +248,7 @@ class Face_Tracker : MainActivity() {
      */
     private inner class GraphicFaceTrackerFactory : MultiProcessor.Factory<Face> {
         override fun create(face: Face): GraphicFaceTracker<Face> {
-            return GraphicFaceTracker(mGraphicOverlay, this@Face_Tracker)
+            return GraphicFaceTracker(mGraphicOverlay, this@FaceTrackerActivity)
         }
     }
 

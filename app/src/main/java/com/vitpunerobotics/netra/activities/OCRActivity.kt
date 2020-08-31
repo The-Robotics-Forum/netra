@@ -28,11 +28,11 @@ import kotlin.properties.Delegates
  *
  **/
 
-class OCR_activity : MainActivity() {
+class OCRActivity : BluetoothActivity() {
 
     override fun onBackPressed() {
         super.onBackPressed()
-        val b = Intent(applicationContext, demo::class.java)
+        val b = Intent(applicationContext, HomeActivity::class.java)
         startActivity(b)
     }
 

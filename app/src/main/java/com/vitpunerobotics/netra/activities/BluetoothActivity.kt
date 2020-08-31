@@ -15,7 +15,7 @@ import com.vitpunerobotics.netra.global_variables
 import java.io.IOException
 import java.util.*
 
-open class MainActivity : AppCompatActivity() {
+open class BluetoothActivity : AppCompatActivity() {
 
     private val button: Button? = null
     private val text_message: TextView? = null
@@ -25,7 +25,7 @@ open class MainActivity : AppCompatActivity() {
     private lateinit var stringArrayAdapter: ArrayAdapter<String>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_bluetooth)
         lv_paired_devices = findViewById(R.id.lv_paired_devices)
         progressBar = findViewById(R.id.progress_bluetooth)
         list_paired_devices = ArrayList()
@@ -112,10 +112,10 @@ open class MainActivity : AppCompatActivity() {
             super.onPostExecute(aVoid)
             global_variables.bT = 1
             if (isBluetoothConnected) {
-                Toast.makeText(this@MainActivity, "Connected", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@BluetoothActivity, "Connected", Toast.LENGTH_SHORT).show()
                 list_paired_devices.clear()
                 finish()
-            } else Toast.makeText(this@MainActivity, "Connection Failed", Toast.LENGTH_SHORT).show()
+            } else Toast.makeText(this@BluetoothActivity, "Connection Failed", Toast.LENGTH_SHORT).show()
             progressBar.visibility = View.INVISIBLE
         }
     }

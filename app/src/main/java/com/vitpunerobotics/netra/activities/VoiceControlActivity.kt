@@ -13,16 +13,16 @@ import com.vitpunerobotics.netra.global_variables
 import java.io.IOException
 import java.util.*
 
-class Voice_Control : MainActivity() {
+class VoiceControlActivity : BluetoothActivity() {
     override fun onBackPressed() {
         super.onBackPressed()
-        val b = Intent(applicationContext, demo::class.java)
+        val b = Intent(applicationContext, HomeActivity::class.java)
         startActivity(b)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_voice__control)
+        setContentView(R.layout.activity_voice_control)
 //        val b: ImageView
 //        val t: TextView
 //        val s: Button

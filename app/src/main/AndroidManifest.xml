@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.vitpunerobotics.netra.activities.splashScreen"
+            android:name="com.vitpunerobotics.netra.activities.SplashScreenActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,24 +24,24 @@
         </activity>
 
         <activity
-            android:name="com.vitpunerobotics.netra.activities.Voice_Control"
+            android:name="com.vitpunerobotics.netra.activities.VoiceControlActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.vitpunerobotics.netra.activities.Manual"
+            android:name="com.vitpunerobotics.netra.activities.ManualControlActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.vitpunerobotics.netra.activities.Face_Tracker"
+            android:name="com.vitpunerobotics.netra.activities.FaceTrackerActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.vitpunerobotics.netra.activities.Color_Detector"
+            android:name="com.vitpunerobotics.netra.activities.ColorDetectionActivity"
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.vitpunerobotics.netra.activities.OCR_activity"
+            android:name="com.vitpunerobotics.netra.activities.OCRActivity"
             android:label="@string/title_activity_ocr_act"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.vitpunerobotics.netra.activities.demo"
+            android:name="com.vitpunerobotics.netra.activities.HomeActivity"
             android:label="@string/demo"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -54,7 +54,7 @@
             android:screenOrientation="fullSensor"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.vitpunerobotics.netra.activities.MainActivity"
+            android:name="com.vitpunerobotics.netra.activities.BluetoothActivity"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
