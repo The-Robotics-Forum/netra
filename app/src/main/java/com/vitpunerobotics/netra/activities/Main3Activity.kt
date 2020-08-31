@@ -45,15 +45,6 @@ class Main3Activity : BluetoothActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
 
-
-        /* val intent = getIntent()
-         val myValue = intent.getStringExtra("masking_values")
-         //Log.d("TAG",myValue)
-        Toast.makeText(applicationContext,myValue,Toast.LENGTH_SHORT).show()
-        */
-
-
-
         startCameraSource()
     }
 
