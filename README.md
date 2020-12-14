@@ -33,7 +33,7 @@ Have any questions, doubts or want to present your opinions, views? You're alway
 - [Avinash Vijayvargiya](https://github.com/avinash14022002)
 
 
-## L
+## License
 
 ```
 MIT License
