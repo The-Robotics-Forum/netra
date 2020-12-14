@@ -7,8 +7,12 @@
 <br><br><br><br><br><br><br>
 
 
-# Netra | Android App | TRF Level 1 Workshop 
 <p align="center">
+Netra
+</p>
+<p align="center">
+Android App | TRF Level 1 Workshop
+  <br>
 Netra is the Android Application that TRF uses for Level 1 Workshop.
 </p>
 
