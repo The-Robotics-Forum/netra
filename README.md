@@ -1,7 +1,7 @@
 <div>
   <p>
-    <img align="left" src="https://github.com/avinash14022002/netra/blob/develop/.logo/The%20Robotic%20Forum%20Logo.jpg" alt="TRF_logo">
-    <img align="right" src="https://github.com/avinash14022002/netra/blob/develop/.logo/RoboSoft.jpeg" alt="RoboSoft_logo">
+    <img align="left" src=".logo/The%20Robotic%20Forum%20Logo.jpg" alt="TRF_logo">
+    <img align="right" src=".logo/RoboSoft.jpeg" alt="RoboSoft_logo">
   </p>
 </div>
 <br><br><br><br><br><br><br><br><br>
