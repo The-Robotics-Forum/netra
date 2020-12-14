@@ -8,17 +8,13 @@
 
 
 # Netra | Android App | TRF Level 1 Workshop 
-
-
-
-<!--<h1 id="gsoc-2020-the-mifos-initiative-developing-mifos-android-sdk" align="center">GSoC 2020 @ The Mifos Initiative | Mifos Android SDK</h1>-->
-
+Netra is the Android Application that TRF uses for Level 1 Workshop.
 
 
 
 [![Build Status](https://travis-ci.org/The-Robotics-Forum/netra.svg?branch=develop)](https://travis-ci.org/The-Robotics-Forum/netra) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Netra is the Android Application that TRF uses for Level 1 Workshop.
+
 
 # Contribution Guidelines
 
