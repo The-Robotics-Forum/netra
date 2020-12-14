@@ -44,7 +44,7 @@ Awesome! If you want to contribute to this project, you're always welcome! See [
 
 ## Want to discuss? 💬
 
-Have any questions, doubts or want to present your opinions, views? You're always welcome. You can [start discussions]().
+Have any questions, doubts or want to present your opinions, views? You're always welcome. You can [start discussions](https://gitter.im/The-Robotics-Forum/netra).
 
 
 ## Contributors
