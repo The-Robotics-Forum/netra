@@ -18,6 +18,9 @@ Netra is the Android Application that TRF uses for Level 1 Workshop.
 </p>
 
 
+## 💡 About the Project
+
+This project includes two subprojects:
 
 
 
