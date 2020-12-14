@@ -3,13 +3,18 @@
     <img align="left" src="https://github.com/avinash14022002/netra/blob/develop/.logo/The%20Robotic%20Forum%20Logo.jpg" alt="TRF_logo">
     <img align="right" src="https://github.com/avinash14022002/netra/blob/develop/.logo/RoboSoft.jpeg" alt="RoboSoft_logo">
     <br>
+    <br><br><br><br><br><br>
+    # Netra | Android App | TRF Level 1 Workshop 
   </p>
+  
+  
 </div>
-<br><br><br><br><br>
 
 
 
-# Netra | Android App | TRF Level 1 Workshop 
+
+
+
 <!--<h1 id="gsoc-2020-the-mifos-initiative-developing-mifos-android-sdk" align="center">GSoC 2020 @ The Mifos Initiative | Mifos Android SDK</h1>-->
 
 
