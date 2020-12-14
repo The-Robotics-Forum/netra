@@ -9,7 +9,7 @@
 
 
 <p align="center">
-  ## Netra
+<h1> Netra </h1>
 </p>
 <p align="center">
 Android App | TRF Level 1 Workshop
