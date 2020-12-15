@@ -9,7 +9,7 @@
 
 
 <p align="center">
-Netra
+<img src = "https://github.com/avinash14022002/netra/blob/develop/.logo/Netra.png">
 </p>
 <p align="center">
 Android App | TRF Level 1 Workshop
