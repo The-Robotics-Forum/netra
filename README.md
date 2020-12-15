@@ -18,7 +18,7 @@
 
 
 
-<img src=".logo/License.png" height = "50px"><img src=".logo/API.png" height = "50px"><img src=".logo/Actions.png" height = "50px"><img src=".logo/Build.png" height = "50px"><img src=".logo/Gitter.png" height = "50px"><img src=".logo/License.png" height = "50px">
+<img src=".logo/License.png" height = "75px"><img src=".logo/API.png" height = "75px"><img src=".logo/Actions.png" height = "75px"><img src=".logo/Build.png" height = "75px"><img src=".logo/Gitter.png" height = "75px"><img src=".logo/License.png" height = "75px">
 
 
 
