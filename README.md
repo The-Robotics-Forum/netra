@@ -18,7 +18,7 @@
 
 
 
-<img src=".logo/License.png" height = "75px"><img src=".logo/API.png" height = "75px"><img src=".logo/Actions.png" height = "75px"><img src=".logo/Build.png" height = "75px"><img src=".logo/Gitter.png" height = "75px"><img src=".logo/License.png" height = "75px">
+<img src=".logo/License.png" height = "75px"><img src=".logo/API.png" height = "75px"><img src=".logo/Actions.png" height = "75px"><img src=".logo/Build.png" height = "75px"><img src=".logo/Gitter.png" height = "75px">
 
 
 
@@ -29,16 +29,10 @@ Please check out the in-development features of the app. by enabling the Develop
 
 |   *Image*       |   *Feature*          | *Description*                               | *Current Status*         |
 |-------------------|------------------------|-----------------------------|--------------------|
-| <img src = ".logo/Face%20Follower.jpeg" width="200"/>  |  Face Follower  | In this feature, the mobile device is embedded on the bot and the device tracks the user’s face to follow him/her according to movements. Commands are sent to bot via Bluetooth using standard [conventions]().      | Enchancement Phase |
+| <img src = ".logo/Face%20Follower.jpeg" width="200"/>  |  Face Follower  | In this feature, the mobile device is embedded on the bot and the device tracks the user’s face to follow him/her according to movements. Commands are sent to bot via Bluetooth using standard conventions.      | Enchancement Phase |
 | <img src = ".logo/Manual%20Control.jpeg" width="200"/>    |  Manual Control  | Joystick with predefined button left, right, forward, backward and circular joystick along with  terminal to send diverse commands.   | In Progress |
 | <img src = ".logo/OCR%20%2B%20Distance.jpeg" width="200"/>    |  [OCR](https://en.wikipedia.org/wiki/Optical_character_recognition) + Distance  | The mobile device is embedded on the bot and it continuously scan for the character on detecting character L(left), R(right), F(forward), B(backward) it sends a command to the bot using standard convention. BUT the command should be sent only if the character is at a particular distance. | In Progress |
 | <img src = ".logo/Voice%20Control.jpeg" width="200"/>    |  Voice Control | On a specific keyword let say "TRF" the voice command should get activated and depending upon inputs from the user command should be sent to bot via Bluetooth.| Development Phase |
-
-    
-    
-# Screenshots
-
-
 
 ## Want to Contribute 🙋‍♂️?
 
