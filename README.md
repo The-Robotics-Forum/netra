@@ -43,6 +43,10 @@ Please check out the in-development features of the app. by enabling the Develop
 
 Awesome! If you want to contribute to this project, you're always welcome! See [Contributing Guidelines](CONTRIBUTING.md). You can also take a look at [Netra's Project Status Tracker](https://github.com/The-Robotics-Forum/netra/issues) for getting more information about current or upcoming tasks.
 
+## Report issues
+
+Something not working properly OR feature that not have been implemented yet.Check the issue tracker and add a new one if your problem is not listed. Please provide a detailed description of your problem and include steps to reproduce it.
+
 
 ## Want to discuss? 💬
 
