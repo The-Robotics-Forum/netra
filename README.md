@@ -12,9 +12,9 @@
 <img src = "https://github.com/avinash14022002/netra/blob/develop/.logo/Netra.png">
 </p>
 <p align="center">
-Android App | TRF Level 1 Workshop
+<h3>Android App | TRF Level 1 Workshop</h3>
   <br>
-Netra is the Android Application that TRF uses for Level 1 Workshop.
+<h4>Netra is the Android Application that TRF uses for Level 1 Workshop.</h4>
 </p>
 
 
