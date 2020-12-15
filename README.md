@@ -18,7 +18,9 @@
 
 
 
-<img src="https://github.com/avinash14022002/netra/blob/develop/.logo/License.png" height = "100px">
+<img src=".logo/License.png" height = "100px"><img src=".logo/API.png" height = "100px"><img src=".logo/Actions.png" height = "100px"><img src=".logo/Build.png" height = "100px">
+
+
 
 
 ## Features
