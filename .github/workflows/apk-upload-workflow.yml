@@ -1,6 +1,9 @@
-name: Android CI
+name: apk-upload-workflow
 
-on: [push, pull_request]
+on:
+  push:
+    branches: 
+      - develop
 
 jobs:
   build:
@@ -15,3 +18,6 @@ jobs:
         java-version: 1.8
     - name: Build with Gradle
       run: chmod +x gradlew && ./gradlew build check
+    
+    - name: upload at webpage
+      run: curl --max-time 1200 -F 'apk_file=@/home/runner/work/netra/netra/app/build/outputs/apk/debug/app-debug.apk' https://vitpunerobotics.com/cms1/mobileapk.php
