@@ -20,7 +20,7 @@
 
 <img src=".logo/License.png" height = "75px"><img src=".logo/API.png" height = "75px"><img src=".logo/Actions.png" height = "75px"><img src=".logo/Build.png" height = "75px"><img src=".logo/Gitter.png" height = "75px">
 
-
+Download on your device and have a quick look at [Netra](https://vitpunerobotics.com/cms1/download_apk.php).
 
 
 ## Features
