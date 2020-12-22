@@ -22,4 +22,5 @@ jobs:
       run: chmod +x gradlew && ./gradlew build check
 
     - name: Upload apk at webpage
+      continue-on-error: true
       run: curl --max-time 1200 -F 'apk_file=@/home/runner/work/netra/netra/app/build/outputs/apk/debug/app-debug.apk' https://vitpunerobotics.com/cms1/mobileapk.php

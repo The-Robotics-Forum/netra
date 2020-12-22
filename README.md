@@ -22,7 +22,6 @@
 
 Download on your device and have a quick look at [Netra](https://vitpunerobotics.com/cms1/download_apk.php).
 
-
 ## Features
 
 Please check out the in-development features of the app. by enabling the Developer mode from the settings menu.
