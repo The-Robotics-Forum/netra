@@ -5,7 +5,7 @@ import android.bluetooth.BluetoothSocket
 import android.content.Intent
 import android.os.AsyncTask
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.util.Log
 import android.view.View
 import android.widget.*
@@ -15,7 +15,7 @@ import com.vitpunerobotics.netra.global_variables
 import java.io.IOException
 import java.util.*
 
-open class MainActivity : AppCompatActivity() {
+open class BluetoothActivity : AppCompatActivity() {
 
     private val button: Button? = null
     private val text_message: TextView? = null
@@ -23,9 +23,19 @@ open class MainActivity : AppCompatActivity() {
     private lateinit var progressBar: ProgressBar
     private lateinit var list_paired_devices: ArrayList<String>
     private lateinit var stringArrayAdapter: ArrayAdapter<String>
+
+    companion object {
+        private const val REQUEST_ENABLE_BT = 1001
+        private const val TAG = "ConnectThread"
+        private val MY_UUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB")
+        var mBluetoothAdapter: BluetoothAdapter? = null
+        var mBluetoothSocket: BluetoothSocket? = null
+        var isBluetoothConnected = false
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_bluetooth)
         lv_paired_devices = findViewById(R.id.lv_paired_devices)
         progressBar = findViewById(R.id.progress_bluetooth)
         list_paired_devices = ArrayList()
@@ -112,20 +122,11 @@ open class MainActivity : AppCompatActivity() {
             super.onPostExecute(aVoid)
             global_variables.bT = 1
             if (isBluetoothConnected) {
-                Toast.makeText(this@MainActivity, "Connected", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@BluetoothActivity, "Connected", Toast.LENGTH_SHORT).show()
                 list_paired_devices.clear()
                 finish()
-            } else Toast.makeText(this@MainActivity, "Connection Failed", Toast.LENGTH_SHORT).show()
+            } else Toast.makeText(this@BluetoothActivity, "Connection Failed", Toast.LENGTH_SHORT).show()
             progressBar.visibility = View.INVISIBLE
         }
-    }
-
-    companion object {
-        private const val REQUEST_ENABLE_BT = 1001
-        private const val TAG = "ConnectThread"
-        private val MY_UUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB")
-        var mBluetoothAdapter: BluetoothAdapter? = null
-        var mBluetoothSocket: BluetoothSocket? = null
-        var isBluetoothConnected = false
     }
 }

@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/yellow"
     android:orientation="vertical"
-    android:weightSum="3"
-
-    >
+    android:weightSum="3">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,7 +32,7 @@
                 android:text="Face Follower"
                 android:textColor="@color/white"
                 android:textSize="20dp"
-                android:textStyle="bold"></Button>
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/voice"
@@ -49,7 +47,7 @@
                 android:text="Voice Assistant"
                 android:textColor="@color/white"
                 android:textSize="20dp"
-                android:textStyle="bold"></Button>
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -70,7 +68,7 @@
                 android:text="Filter"
                 android:textColor="@color/white"
                 android:textSize="20dp"
-                android:textStyle="bold"></Button>
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/ocr"
@@ -85,13 +83,10 @@
                 android:text="OCR"
                 android:textColor="@color/white"
                 android:textSize="20dp"
-                android:textStyle="bold"></Button>
-
-
+                android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -105,7 +100,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
-            android:src="@drawable/trflogo6"></ImageView>
+            android:src="@drawable/trflogo6" />
     </LinearLayout>
 
 
@@ -125,7 +120,6 @@
             <Button
                 android:id="@+id/move"
                 style="@style/CardView.Dark"
-
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_gravity="center_vertical"
@@ -136,12 +130,11 @@
                 android:text="MOVE"
                 android:textColor="@color/white"
                 android:textSize="20dp"
-                android:textStyle="bold"></Button>
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/manual"
                 style="@style/CardView.Dark"
-
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_gravity="center_vertical"
@@ -152,7 +145,7 @@
                 android:text="Manual "
                 android:textColor="@color/white"
                 android:textSize="20dp"
-                android:textStyle="bold"></Button>
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -171,7 +164,6 @@
             <Button
                 android:id="@+id/bluetooth"
                 style="@style/CardView.Dark"
-
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_gravity="center_vertical"
@@ -182,12 +174,14 @@
                 android:text="Bluetooth"
                 android:textColor="@color/white"
                 android:textSize="20dp"
-                android:textStyle="bold"></Button>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
         </LinearLayout>
+
     </LinearLayout>
-</android.support.v7.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

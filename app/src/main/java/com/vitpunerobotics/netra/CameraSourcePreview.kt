@@ -19,14 +19,14 @@ import android.Manifest
 import android.content.Context
 import android.content.pm.PackageManager
 import android.content.res.Configuration
-import android.support.v4.app.ActivityCompat
+import androidx.core.app.ActivityCompat
 import android.util.AttributeSet
 import android.util.Log
 import android.view.SurfaceHolder
 import android.view.SurfaceView
 import android.view.ViewGroup
 import com.google.android.gms.vision.CameraSource
-import com.vitpunerobotics.netra.activities.Face_Tracker
+import com.vitpunerobotics.netra.activities.FaceTrackerActivity
 import java.io.IOException
 import kotlin.math.roundToInt
 
@@ -100,8 +100,8 @@ class CameraSourcePreview(private val mContext: Context, attrs: AttributeSet?) :
     }
 
     override fun onLayout(changed: Boolean, left: Int, top: Int, right: Int, bottom: Int) {
-        var width = Face_Tracker.size!!.y
-        var height = Face_Tracker.size!!.x
+        var width = FaceTrackerActivity.size!!.y
+        var height = FaceTrackerActivity.size!!.x
         if (mCameraSource != null) {
             val size = mCameraSource!!.previewSize
             if (size != null) {

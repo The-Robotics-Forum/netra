@@ -5,7 +5,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
-import android.support.v4.app.ActivityCompat
+import androidx.core.app.ActivityCompat
 import android.view.SurfaceHolder
 import android.widget.Toast
 import com.google.android.gms.vision.CameraSource
@@ -29,7 +29,7 @@ import kotlin.properties.Delegates
  * :=  Fun  :  Coffee  :  Code
  *
  **/
-class Main3Activity : MainActivity() {
+class Main3Activity : BluetoothActivity() {
 
     private var mCameraSource by Delegates.notNull<CameraSource>()
     private var textRecognizer by Delegates.notNull<TextRecognizer>()
@@ -37,22 +37,13 @@ class Main3Activity : MainActivity() {
     private val PERMISSION_REQUEST_CAMERA = 100
     override fun onBackPressed() {
         super.onBackPressed()
-        val b = Intent(applicationContext, demo::class.java)
+        val b = Intent(applicationContext, HomeActivity::class.java)
         startActivity(b)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
-
-
-        /* val intent = getIntent()
-         val myValue = intent.getStringExtra("masking_values")
-         //Log.d("TAG",myValue)
-        Toast.makeText(applicationContext,myValue,Toast.LENGTH_SHORT).show()
-        */
-
-
 
         startCameraSource()
     }

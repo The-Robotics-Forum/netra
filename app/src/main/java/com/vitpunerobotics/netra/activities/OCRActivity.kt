@@ -5,7 +5,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
-import android.support.v4.app.ActivityCompat
+import androidx.core.app.ActivityCompat
 import android.view.SurfaceHolder
 import com.google.android.gms.vision.CameraSource
 import com.google.android.gms.vision.Detector
@@ -28,11 +28,11 @@ import kotlin.properties.Delegates
  *
  **/
 
-class OCR_activity : MainActivity() {
+class OCRActivity : BluetoothActivity() {
 
     override fun onBackPressed() {
         super.onBackPressed()
-        val b = Intent(applicationContext, demo::class.java)
+        val b = Intent(applicationContext, HomeActivity::class.java)
         startActivity(b)
     }
 

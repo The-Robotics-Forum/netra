@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.vitpunerobotics.netra.activities.OCR_activity">
+    tools:context="com.vitpunerobotics.netra.activities.OCRActivity">
 
     <SurfaceView
         android:id="@+id/surface_camera_preview"

@@ -7,11 +7,11 @@ import android.widget.TextView
 import com.vitpunerobotics.netra.R
 import com.vitpunerobotics.netra.global_variables
 
-class Manual : MainActivity() {
+class ManualControlActivity : BluetoothActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_manual)
+        setContentView(R.layout.activity_manual_control)
         var right = findViewById<Button>(R.id.right)
         var left = findViewById<Button>(R.id.left)
         var stop = findViewById<Button>(R.id.stop)
