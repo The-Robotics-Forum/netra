@@ -22,37 +22,37 @@
                 android:id="@+id/color"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Colour_Filter" />
+                android:text="@string/colour_filter" />
 
             <Button
                 android:id="@+id/face"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Face_Tracking" />
+                android:text="@string/face_tracking" />
 
             <Button
                 android:id="@+id/voice"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Voice_Command" />
+                android:text="@string/voice_command" />
 
             <Button
                 android:id="@+id/ocr"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="OCR" />
+                android:text="@string/ocr" />
 
             <Button
                 android:id="@+id/move"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="MOVE" />
+                android:text="@string/move" />
 
             <Button
                 android:id="@+id/path"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="PATH" />
+                android:text="@string/path" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

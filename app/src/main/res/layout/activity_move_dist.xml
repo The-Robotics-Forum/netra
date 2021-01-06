@@ -72,7 +72,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="127dp"
         android:layout_marginBottom="25dp"
-        android:text="RED" />
+        android:text="@string/red" />
 
     <Button
         android:id="@+id/Blue"
@@ -82,7 +82,7 @@
         android:layout_alignTop="@+id/h_max"
         android:layout_marginStart="-1dp"
         android:layout_marginTop="57dp"
-        android:text="BLUE" />
+        android:text="@string/blue" />
 
     <Button
         android:id="@+id/Green"
@@ -92,15 +92,15 @@
         android:layout_alignBottom="@+id/s_max"
         android:layout_marginStart="0dp"
         android:layout_marginBottom="-34dp"
-        android:text="GREEN" />
+        android:text="@string/green" />
 
     <TextView
         android:id="@+id/dist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
-        android:text="TextView"
+        android:text="@string/textview"
 
         android:textStyle="bold" />
 

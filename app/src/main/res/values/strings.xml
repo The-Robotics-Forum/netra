@@ -7,4 +7,67 @@
     <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
     <string name="title_activity_main3">Main3Activity</string>
     <string name="demo">demo</string>
+
+    <!--    activity_bluetooth-->
+    <string name="bluetooth_sender">Bluetooth Sender</string>
+    <string name="paired_devices">Paired Devices</string>
+    <string name="enable_bluetooth">Enable Bluetooth</string>
+    <!--    activity_bluetooth-->
+
+    <!--    activity_color_detection-->
+    <string name="done">DONE</string>
+    <!--    activity_color_detection-->
+
+    <!--    activity_face_tracker-->
+    <string name="send_data">Send Data</string>
+    <!--    activity_face_tracker-->
+
+    <!--    activity_home-->
+    <string name="face_follower">Face Follower</string>
+    <string name="voice_assistant">Voice Assistant</string>
+    <string name="filter">Filter</string>
+    <string name="manual">Manual</string>
+    <string name="bluetooth">Bluetooth</string>
+    <!--    activity_home-->
+
+    <!--    activity_manual_control-->
+    <string name="status">Status</string>
+    <string name="backward">Backward</string>
+    <string name="right">Right</string>
+    <string name="left">Left</string>
+    <string name="forward">Forward</string>
+    <string name="netra">NETRA</string>
+    <!--    activity_manual_control-->
+
+    <!--    activity_move_dist-->
+    <string name="red">RED</string>
+    <string name="blue">BLUE</string>
+    <string name="green">GREEN</string>
+    <string name="textview">TextView</string>
+    <!--    activity_move_dist-->
+
+    <!--    activity_option-->
+    <string name="colour_filter">Colour_Filter</string>
+    <string name="face_tracking">Face_Tracking</string>
+    <string name="voice_command">Voice_Command</string>
+    <string name="ocr">OCR</string>
+    <string name="move">MOVE</string>
+    <string name="path">PATH</string>
+    <!--    activity_option-->
+
+    <!--    activity_voice_control-->
+    <string name="stop">STOP</string>
+    <!--    activity_voice_control-->
+
+    <!--    activity_splash_screen_activity-->
+    <string name="trf_logo">TRF LOGO</string>
+    <string name="created_by">CREATED BY</string>
+    <string name="robosoft_logo">Robosoft Logo</string>
+    <string name="splash">Splash</string>
+    <!--    activity_splash_screen_activity-->
+
+    <!--    content_main3-->
+    <string name="hello_world">Hello World!</string>
+    <!--    content_main3-->
+
 </resources>

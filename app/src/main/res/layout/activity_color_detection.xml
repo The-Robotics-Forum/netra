@@ -81,10 +81,10 @@
         android:layout_marginStart="157dp"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="24dp"
-        android:text="DONE"
+        android:text="@string/done"
         android:visibility="invisible" />
 
-    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/red"
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -149,7 +149,7 @@
         app:civ_border_color="#ffffff"
         app:civ_border_width="2dp" />
 
-    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/settings"
         android:layout_width="50dp"
         android:layout_height="50dp"
