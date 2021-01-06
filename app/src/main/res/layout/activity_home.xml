@@ -29,9 +29,9 @@
                 android:layout_marginRight="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/shape"
-                android:text="Face Follower"
+                android:text="@string/face_follower"
                 android:textColor="@color/white"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <Button
@@ -44,9 +44,9 @@
                 android:layout_marginRight="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/shape"
-                android:text="Voice Assistant"
+                android:text="@string/voice_assistant"
                 android:textColor="@color/white"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -65,9 +65,9 @@
                 android:layout_marginRight="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/shape"
-                android:text="Filter"
+                android:text="@string/filter"
                 android:textColor="@color/white"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <Button
@@ -80,9 +80,9 @@
                 android:layout_marginRight="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/shape"
-                android:text="OCR"
+                android:text="@string/ocr"
                 android:textColor="@color/white"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -100,6 +100,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
+            android:contentDescription="@string/trf_logo"
             android:src="@drawable/trflogo6" />
     </LinearLayout>
 
@@ -127,9 +128,9 @@
                 android:layout_marginRight="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/shape"
-                android:text="MOVE"
+                android:text="@string/move"
                 android:textColor="@color/white"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <Button
@@ -142,9 +143,9 @@
                 android:layout_marginRight="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/shape"
-                android:text="Manual "
+                android:text="@string/manual"
                 android:textColor="@color/white"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -171,9 +172,9 @@
                 android:layout_marginRight="20dp"
                 android:layout_weight="3"
                 android:background="@drawable/shape"
-                android:text="Bluetooth"
+                android:text="@string/bluetooth"
                 android:textColor="@color/white"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView

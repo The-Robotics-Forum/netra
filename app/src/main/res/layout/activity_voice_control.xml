@@ -27,11 +27,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
-        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/btn"
             android:layout_width="240dp"
             android:layout_height="200dp"
-            android:layout_alignParentTop="true"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="50dp"
             android:layout_weight="1"
@@ -46,10 +45,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="hello World!"
+            android:text="@string/hello_world"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="30dp" />
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/STOP"
@@ -57,15 +56,14 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/yellow"
-            android:text="STOP"
+            android:text="@string/stop"
             android:textColor="#000000"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
     </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:layout_weight="1" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

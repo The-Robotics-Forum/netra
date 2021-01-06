@@ -12,7 +12,6 @@
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         app:popupTheme="@style/AppTheme.NoActionBar" />
-
     <include layout="@layout/content_main3" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

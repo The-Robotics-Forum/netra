@@ -11,117 +11,71 @@
 
 
     <ProgressBar
-
         android:id="@+id/progress_bluetooth"
-
         android:layout_width="wrap_content"
-
         android:layout_height="wrap_content"
-
-        android:layout_centerInParent="true"
-
         android:visibility="invisible" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-
         android:layout_marginTop="10dp"
-
         android:background="@color/yellow"
-
         android:fontFamily="sans-serif-light"
-
-        android:text="Bluetooth Sender"
-
+        android:text="@string/bluetooth_sender"
         android:textColor="@color/white"
-
         android:textSize="30sp"
-
         android:textStyle="bold" />
 
 
     <LinearLayout
 
         android:layout_width="match_parent"
-
         android:layout_height="wrap_content"
-
         android:layout_margin="10dp"
-
         android:orientation="horizontal"
-
         android:weightSum="2">
-
 
         <Button
             android:id="@+id/btn_paired_dev"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-
             android:layout_weight="1"
-
             android:background="@color/yellow"
-
             android:onClick="onClickListPairedDevices"
-
-            android:text="Paired Devices"
-
+            android:text="@string/paired_devices"
             android:textColor="@color/white" />
-
 
         <Button
             android:id="@+id/btn_connect"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-
             android:layout_weight="1"
-
             android:background="@color/yellow"
-
             android:onClick="onClickEnableBluetooth"
-
-            android:text="Enable Bluetooth"
-
+            android:text="@string/enable_bluetooth"
             android:textColor="@color/white" />
-
-
     </LinearLayout>
 
 
     <LinearLayout
-
         android:layout_width="wrap_content"
-
         android:layout_height="wrap_content" />
 
     <LinearLayout
-
         android:layout_width="match_parent"
-
         android:layout_height="wrap_content">
 
-
         <ListView
-
-
             android:id="@+id/lv_paired_devices"
-
             android:layout_width="match_parent"
-
             android:layout_height="match_parent"
-
             android:layout_above="@+id/ll2"
-
             android:layout_below="@+id/ll1"
-
             android:layout_marginTop="1dp"
-
             android:layout_marginBottom="1dp"
-
             android:textColor="#000" />
-
 
     </LinearLayout>
 
