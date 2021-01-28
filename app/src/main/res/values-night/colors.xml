@@ -24,8 +24,9 @@
     <color name="color15">#79260C</color>
 
 
+
     <color name="textColor">#FFFFFF</color>
-    <color name="backgroundColor">#DBCA33</color>
+    <color name="backgroundColor">#2C2C2C</color>
     <color name="button">#000</color>
 
 </resources>
