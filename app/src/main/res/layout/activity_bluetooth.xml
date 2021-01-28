@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/yellow"
+    android:background="@color/backgroundColor"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context="com.vitpunerobotics.netra.activities.BluetoothActivity">
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android:background="@color/yellow"
+        android:background="@color/backgroundColor"
         android:fontFamily="sans-serif-light"
         android:text="@string/bluetooth_sender"
         android:textColor="@color/white"
@@ -42,7 +42,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/yellow"
+            android:background="@color/button"
             android:onClick="onClickListPairedDevices"
             android:text="@string/paired_devices"
             android:textColor="@color/white" />
@@ -52,7 +52,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/yellow"
+            android:background="@color/button"
             android:onClick="onClickEnableBluetooth"
             android:text="@string/enable_bluetooth"
             android:textColor="@color/white" />
@@ -75,7 +75,7 @@
             android:layout_below="@+id/ll1"
             android:layout_marginTop="1dp"
             android:layout_marginBottom="1dp"
-            android:textColor="#000" />
+            android:textColor="@color/textColor" />
 
     </LinearLayout>
 
