@@ -10,6 +10,7 @@ import android.util.Log
 import android.view.View
 import android.widget.*
 import android.widget.AdapterView.OnItemClickListener
+import androidx.appcompat.app.AppCompatDelegate
 import com.vitpunerobotics.netra.R
 import com.vitpunerobotics.netra.global_variables
 import java.io.IOException
@@ -51,6 +52,8 @@ open class BluetoothActivity : AppCompatActivity() {
             ConnectBluetooth().execute(macAddress)
         }
         isBluetoothConnected = true
+
+
     }
 
     fun onClickListPairedDevices(view: View?) {
