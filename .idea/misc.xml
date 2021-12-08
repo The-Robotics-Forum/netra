@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/debz codes/Android/Android Projects/netra/app/src/main/res/layout/activity_bluetooth.xml" value="0.27447916666666666" />
+        <entry key="..\:/debz codes/Android/Android Projects/netra/app/src/main/res/layout/activity_manual_control.xml" value="0.27447916666666666" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

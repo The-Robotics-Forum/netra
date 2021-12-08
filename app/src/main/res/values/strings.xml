@@ -71,4 +71,13 @@
     <string name="hello_world">Hello World!</string>
     <!--    content_main3-->
 
+    <!--Direction Strings-->
+    <string name="stop_direction">S</string>
+    <string name="forward_direction">F</string>
+    <string name="backward_direction">B</string>
+    <string name="left_direction">L</string>
+    <string name="right_direction">R</string>
+
+
+
 </resources>
