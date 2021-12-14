@@ -20,31 +20,31 @@ class ManualControlActivity : BluetoothActivity() {
         var t = findViewById<TextView>(R.id.STT)
         right.setOnClickListener(View.OnClickListener {
             if (global_variables.bT == 1) {
-                sendMessage("R")
-                t.text = "R"
+                sendMessage(getString(R.string.right_direction))
             }
+            t.text = "R"
         })
         left.setOnClickListener(View.OnClickListener {
             if (global_variables.bT == 1) {
-                sendMessage("L")
+                sendMessage(getString(R.string.left_direction))
             }
             t.text = "L"
         })
         forward.setOnClickListener(View.OnClickListener {
             if (global_variables.bT == 1) {
-                sendMessage("F")
+                sendMessage(getString(R.string.forward_direction))
             }
             t.text = "F"
         })
         backward.setOnClickListener(View.OnClickListener {
             if (global_variables.bT == 1) {
-                sendMessage("B")
+                sendMessage(getString(R.string.backward_direction))
             }
             t.text = "B"
         })
         stop.setOnClickListener(View.OnClickListener {
             if (global_variables.bT == 1) {
-                sendMessage("S")
+                sendMessage(getString(R.string.stop_direction))
             }
             t.text = "S"
         })

@@ -109,23 +109,23 @@ class Main3Activity : BluetoothActivity() {
 
 
                         if (item.value == "L") {
-                            sendMessage("L")
+                            sendMessage(getString(R.string.left_direction))
                             Toast.makeText(applicationContext, "Done Left", Toast.LENGTH_SHORT).show()
                             startActivity(i)
                             finish()
                         } else if (item.value == "R") {
-                            sendMessage("R")
+                            sendMessage(getString(R.string.right_direction))
                             Toast.makeText(applicationContext, "Done Right", Toast.LENGTH_SHORT).show()
                             startActivity(i)
                             finish()
                         }
                         if (item.value == "F") {
-                            sendMessage("F")
+                            sendMessage(getString(R.string.forward_direction))
                             Toast.makeText(applicationContext, "Done Forwerd", Toast.LENGTH_SHORT).show()
                             startActivity(i)
                             finish()
                         } else if (item.value == "S") {
-                            sendMessage("S")
+                            sendMessage(getString(R.string.stop_direction))
                             Toast.makeText(applicationContext, "Done ", Toast.LENGTH_SHORT).show()
                             startActivity(i)
                             finish()

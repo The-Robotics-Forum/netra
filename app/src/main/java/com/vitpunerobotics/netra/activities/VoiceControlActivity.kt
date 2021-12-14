@@ -35,7 +35,7 @@ class VoiceControlActivity : BluetoothActivity() {
         b.setOnClickListener { startActivityForResult(intent, 1) }
         s.setOnClickListener {
             if (global_variables.bT == 1) {
-                sendMessage("S")
+                sendMessage(getString(R.string.stop_direction))
             }
         }
     }
@@ -50,31 +50,31 @@ class VoiceControlActivity : BluetoothActivity() {
             for (s in str) {
                 if (s.contains("forward")) {
                     if (global_variables.bT == 1) {
-                        sendMessage("F")
+                        sendMessage(getString(R.string.forward_direction))
                     }
                     Log.d("TAG", s)
                     break
                 } else if (s.contains("backward")) {
                     if (global_variables.bT == 1) {
-                        sendMessage("B")
+                        sendMessage(getString(R.string.backward_direction))
                     }
                     Log.d("TAG", s)
                     break
                 } else if (s.contains("left")) {
                     if (global_variables.bT == 1) {
-                        sendMessage("L")
+                        sendMessage(getString(R.string.left_direction))
                     }
                     Log.d("TAG", s)
                     break
                 } else if (s.contains("right")) {
                     if (global_variables.bT == 1) {
-                        sendMessage("R")
+                        sendMessage(getString(R.string.right_direction))
                     }
                     Log.d("TAG", s)
                     break
                 } else if (s.contains("stop")) {
                     if (global_variables.bT == 1) {
-                        sendMessage("S")
+                        sendMessage(getString(R.string.stop_direction))
                     }
                     Log.d("TAG", s)
                     break
